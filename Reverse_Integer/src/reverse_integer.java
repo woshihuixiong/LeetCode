@@ -8,6 +8,7 @@ public class reverse_integer {
         Scanner sc = new Scanner(System.in);
 		System.out.print("Please input the x:"); 
         int x = sc.nextInt();
+        sc.close();
         
         System.out.println(ss.reverse(x));
 	}

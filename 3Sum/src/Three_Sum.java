@@ -5,21 +5,12 @@ import java.util.Scanner;
 
 public class Three_Sum {
 	public static void main(String[] args) {
-		
-		Solution ss=new Solution();
-		
-		Scanner sc = new Scanner(System.in);
-      
-        System.out.println("Please input the nums:");
-		String str = sc.next().toString();
-		String[] arr  = str.split(",");
-		int[] nums = new int[arr.length];
-		for(int j = 0; j<nums.length;j++) {
-		    nums[j] = Integer.parseInt(arr[j]);
-		}
-		sc.close();
-		
-        System.out.println(ss.threeSum(nums));
+		List<List<Integer>> ans = new ArrayList<List<Integer>>();
+		ans.add(Arrays.asList(1,2,3));
+		ans.add(Arrays.asList(4,5,6,7));
+		int[] nums = {5,4,0,-1};
+		Arrays.sort(nums);
+		System.out.println(ans.get(0).get(1));
   }
 
 }
